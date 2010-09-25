@@ -1,0 +1,17 @@
+Highlights all given terms/keywords like google does in its cache.
+Herefore Highlighter parses the dom and everytime a keyword is found it gets highlighted.
+ 
+Example usage:
+<code>
+	var hi = new Highlighter();
+	hi.highlight("Hello World"); // highlights the text "Hello World"
+
+	var hi2 = new Highlighter({'class_names':false}); //doen't add css classes now
+ 	hi.highlight(["word1", "word2"]); // highlights word1 and word2
+ 
+ 	// You can use Highlighter with SearchKeywords like this:
+ 	var hi = new Highlighter();
+	hi.highlight((new SearchKeywords()).get());
+</code>
+
+There are a bunch of options to customize the behaviour of Highlighter. Take a look at DEFAULT_OPTIONS
